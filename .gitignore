@@ -5,3 +5,4 @@ project-checklist.html
 .DS_Store
 .vscode/*
 !.vscode/extensions.json
+node_modules
