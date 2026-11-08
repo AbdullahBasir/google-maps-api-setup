@@ -69,3 +69,9 @@ body {
 #results b {
   color: var(--text-h);
 }
+
+#map {
+  height: 400px;
+  margin-top: 24px;
+  border-radius: 8px;
+}
