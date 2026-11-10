@@ -9,7 +9,7 @@ export type Place = {
 export async function searchPlaces(query: string): Promise<Place[]> {
     const data = await googlePost<{ places?: Place[] }>(
         'https://places.googleapis.com/v1/places:searchText',
-        'places.displayName,places.formattedAddress,places.location',
+        'places.id,places.displayName,places.formattedAddress,places.location',
         { textQuery: query },
     )
     return data.places ?? []
